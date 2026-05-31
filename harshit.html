@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birthday Surprise ❤️</title>
+
+<link rel="stylesheet" href="harshit.css">
+</head>
+
+<body>
+
+<!-- PASSWORD SCREEN -->
+<div id="lockScreen">
+    <h2>🔐 Enter Secret Code</h2>
+
+    <input id="pass" placeholder="Your Childhood Name 😊">
+
+    <button onclick="checkPass()">
+        Unlock ❤️
+    </button>
+</div>
+
+<!-- MAIN -->
+<div id="main" class="hero">
+<h1 id="birthdayTitle">🎂 Happy Birthday Pragya ❤️</h1>
+
+<div id="typing"></div>
+
+<div id="cakeArea">
+
+    <div id="cake">🎂</div>
+
+    <button id="cakeBtn" onclick="cutCake()">
+        Cut The Cake 🎂
+    </button>
+
+    <h2 id="cakeMsg"></h2>
+
+    <audio id="birthdaySong">
+        <source src="birthday.mp3" type="audio/mp3">
+    </audio>
+
+</div>
+
+
+
+<div id="photoReveal">
+
+    <div class="leftPhotos">
+        <img src="photo10.jpg">
+        <img src="photo11.jpg">
+    </div>
+
+   <div class="centerMsg">
+
+    <h1>❤️ Happy Birthday Pragya ❤️</h1>
+
+    <button id="surpriseBtn"
+            onclick="startSurprise()"
+            style="display:none;">
+        Open Surprise 🎁
+    </button>
+
+</div>
+
+    <div class="rightPhotos">
+        <img src="photo12.jpg">
+        <img src="photo13.jpg">
+    </div>
+
+</div>
+</div>
+
+
+<!-- MEMORIES -->
+<div class="section hero" id="sec1">
+
+<h2>📸 Beautiful Memories</h2>
+
+<div class="photo-wall">
+
+<img src="photo1.jpg.jpg" class="pic p1">
+<img src="photo2.jpg.jpg" class="pic p2">
+<img src="photo3.jpg.jpg" class="pic p3">
+<img src="photo4.jpg.jpg" class="pic p4">
+<img src="photo20.jpg.jpg" class="pic p5">
+<img src="photo22.jpg.jpg" class="pic p6">
+
+</div>
+
+</div>
+
+<!-- SPECIAL -->
+<div class="section hero" id="sec2">
+
+<h2>💖 Why You Are Special</h2>
+
+<div class="cards">
+
+<div class="card">😊 Your Smile</div>
+<div class="card">❤️ Your Kind Heart</div>
+<div class="card">🤝 Your Support</div>
+<div class="card">✨ Your Presence</div>
+
+</div>
+
+</div>
+
+
+
+<!-- FINAL MESSAGE -->
+<div class="section hero" id="sec3">
+
+<h2>💌 Final Message</h2>
+
+<p class="message">
+💌 Final Message
+
+Happy Birthday Pragya ❤️
+
+You are truly a wonderful person, and I feel lucky to know you. Your smile, kindness, and positive energy make every moment a little brighter.
+
+May this year bring you happiness, success, good health, and countless beautiful memories. Keep smiling, keep shining, and always stay the amazing person you are. ✨
+
+Wishing you a day filled with joy, laughter, and everything that makes you happy. 🎂🎉
+
+Once again, Happy Birthday! ❤️
+
+</p>
+
+<button onclick="openVideo()">
+Play Video Surprise 🎬
+</button>
+
+</div>
+
+<!-- VIDEO -->
+<div id="videoPopup">
+
+<div class="videoBox">
+
+<span class="closeBtn" onclick="closeVideo()">
+❌
+</span>
+
+<video id="birthdayVideo" controls>
+<source src="video.mp4" type="video/mp4">
+</video>
+
+</div>
+
+</div>
+
+<script src="harshit.js"></script>
+
+</body>
+</html>
